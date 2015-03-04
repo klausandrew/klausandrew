@@ -48,7 +48,7 @@ namespace Ergolys.Applications {
     class SMTPOutgoing {
         //TODO: Create inputs for FROM, TO, SUBJECT, BODY -- Already setup with predefined predicates.
         public void SMTP(string from, string to, string subject, string body) {
-            MailMessage mm = new MailMessage("klaus.andrew@gmail.com", "klaus.andrew@gmail.com","Subject","Body");
+            MailMessage mm = new MailMessage(from, to, subject, body);
             
             SmtpClient mailer = new SmtpClient() { 
                 Host = "smtp.gmail.com",

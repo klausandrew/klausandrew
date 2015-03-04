@@ -23,12 +23,33 @@ namespace Ergolys.ObjectModels
 
     class RequestSet : IDataAccess
     {
-
-        IInterface i;// = new IInterface();   
         public List<Request> RequestRecords {get; set;}
 
-        public string Create()
-        {
+        public void Open() {
+            throw new NotImplementedException();
+        }
+
+        public void Create() {
+            throw new NotImplementedException();
+        }
+
+        public void Read() {
+            throw new NotImplementedException();
+        }
+
+        public void Update() {
+            throw new NotImplementedException();
+        }
+
+        public void Delete() {
+            throw new NotImplementedException();
+        }
+
+        public void Close() {
+            throw new NotImplementedException();
+        }
+
+        public System.Data.DataSet Read(string cmd) {
             throw new NotImplementedException();
         }
     }     

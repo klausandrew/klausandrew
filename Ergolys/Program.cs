@@ -6,40 +6,53 @@ using System.Threading.Tasks;
 using System.Collections;
 using Ergolys.ObjectModels;
 using Ergolys.Applications;
+using System.Collections.ObjectModel;
+using System.Data.SqlClient;
+using System.Data;
+using Ergolys.DataAccess;
+
+
 namespace Ergolys
 {
-    class Program : IDataAccess
+    class Program
     {
         public static void Main(string[] args) {
             #region TestMethods
 
-            SMTPOutgoing smptOutgoing = new SMTPOutgoing();
-            smptOutgoing.SMTP();
-
-            Console.WriteLine("Complete");
-            Console.ReadLine();
-
-                //Refernce another project (MVC)
-
-                //Ask for user input
-
-                //Create Inforce referential integrity with complex object
             
-                //Read
 
-                //Update
+            //SMTPOutgoing smptOutgoing = new SMTPOutgoing();
+            //smptOutgoing.SMTP("","","","");
+            //Console.WriteLine("Complete");
+            //Console.ReadLine();
 
-                //Delete record
+            //ADO.NET connection
+            IDataAccess _da = new DataAccess.DataAccess();
 
-                //Reference JAVA
+            _da = new DataAccess.DataAccess();
+            _da.Open();
+            DataSet ds = _da.Read("Select * from Orders");
+            DataTable dt = ds.Tables[0];
 
-                //Reference Perl
+            //Refernce another project (MVC)
 
-                //referenca SOAP
+            //Ask for user input
 
-                
+            //Create Inforce referential integrity with complex object
+            
+            //Read
 
-                #region Load dictionary values in enum or from web.config file.
+            //Update
+
+            //Delete record
+
+            //Reference JAVA
+
+            //Reference Perl
+
+            //referenca SOAP
+
+            #region Load dictionary values in enum or from web.config file.
                     Dictionary<int, string> type = new Dictionary<int, string>();
                     type.Add(1, "Home");
                     type.Add(2, "Product");
@@ -78,10 +91,6 @@ namespace Ergolys
         public void Return(string s) {
             Console.WriteLine(); 
             Console.WriteLine(s.ToString());
-        }
-
-        public string Create() {
-            throw new NotImplementedException();
         }
     } 
 }
