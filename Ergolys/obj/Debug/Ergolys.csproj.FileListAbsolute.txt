@@ -1,0 +1,10 @@
+C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\bin\Debug\Ergolys.exe.config
+C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\bin\Debug\Ergolys.exe
+C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\bin\Debug\Ergolys.pdb
+C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\obj\Debug\Ergolys.exe
+C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\obj\Debug\Ergolys.pdb
+C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\bin\Debug\EntityFramework.dll
+C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\bin\Debug\EntityFramework.xml
+C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\obj\Debug\Ergolys.csprojResolveAssemblyReference.cache
