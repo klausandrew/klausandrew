@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-
-namespace Ergolys.ObjectModels
+using Ergolys;
+using Ergolys.DataAccess;
+namespace Ergolys
 {
-    class Request
+    public class Request
     {
 
         public int RequestID { get; set; }
@@ -21,19 +22,14 @@ namespace Ergolys.ObjectModels
         public DateTime ModifiedOn { get; set; }
     }
 
-    class RequestSet : IDataAccess
+    public class RequestSet : IDataAccess
     {
-        public List<Request> RequestRecords {get; set;}
-
-        public void Open() {
+        //public List<Request> RequestRecords {get; set;}
+        public string Create() {
             throw new NotImplementedException();
         }
 
-        public void Create() {
-            throw new NotImplementedException();
-        }
-
-        public void Read() {
+        void IDataAccess.Create() {
             throw new NotImplementedException();
         }
 
@@ -45,11 +41,12 @@ namespace Ergolys.ObjectModels
             throw new NotImplementedException();
         }
 
-        public void Close() {
+        public System.Data.DataSet Read(string cmd) {
             throw new NotImplementedException();
         }
 
-        public System.Data.DataSet Read(string cmd) {
+
+        public void Open() {
             throw new NotImplementedException();
         }
     }     

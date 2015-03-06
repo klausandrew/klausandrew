@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ergolys.ObjectModels
+namespace Ergolys
 {
     class Product
     {

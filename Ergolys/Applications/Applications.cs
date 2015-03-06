@@ -1,4 +1,4 @@
-﻿using Ergolys.ObjectModels;
+﻿using Ergolys;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Net.Mail;
 using System.Net;
 
-namespace Ergolys.Applications {
+namespace Ergolys {
     class InputFromConsole {
         public InputFromConsole() {
             Program p = new Program();

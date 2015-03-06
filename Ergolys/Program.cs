@@ -4,22 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
-using Ergolys.ObjectModels;
-using Ergolys.Applications;
+using Ergolys.DataAccess;
 using System.Collections.ObjectModel;
 using System.Data.SqlClient;
 using System.Data;
-using Ergolys.DataAccess;
-
+using Ergolys;
+using System.IO;
 
 namespace Ergolys
 {
-    class Program
+    class Program : IDataAccess
     {
         public static void Main(string[] args) {
             #region TestMethods
-
-            
 
             //SMTPOutgoing smptOutgoing = new SMTPOutgoing();
             //smptOutgoing.SMTP("","","","");
@@ -29,27 +26,27 @@ namespace Ergolys
             //ADO.NET connection
             IDataAccess _da = new DataAccess.DataAccess();
 
+            NorthwindEntities dbContext = new NorthwindEntities();
+            //var query = from p in dbContext.ProductSet
+            //            where p.Categories.CategoryName == "Seafood"
+            //            select p;
+            //IEnumerable<Product> products = query.ToList();
+
             _da = new DataAccess.DataAccess();
             _da.Open();
             DataSet ds = _da.Read("Select * from Orders");
+            
+            
             DataTable dt = ds.Tables[0];
 
             //Refernce another project (MVC)
-
             //Ask for user input
-
-            //Create Inforce referential integrity with complex object
-            
+            //Create Inforce referential integrity with complex object            
             //Read
-
             //Update
-
             //Delete record
-
             //Reference JAVA
-
             //Reference Perl
-
             //referenca SOAP
 
             #region Load dictionary values in enum or from web.config file.
@@ -82,15 +79,38 @@ namespace Ergolys
         }
 
         public string InputFromConsole() {
-            
             string s = Console.ReadLine();
             return s;
-            //throw new NotImplementedException();
         }
 
         public void Return(string s) {
             Console.WriteLine(); 
             Console.WriteLine(s.ToString());
+        }
+
+        public string Create() {
+            throw new NotImplementedException();
+        }
+
+        void IDataAccess.Create() {
+            throw new NotImplementedException();
+        }
+
+        public void Update() {
+            throw new NotImplementedException();
+        }
+
+        public void Delete() {
+            throw new NotImplementedException();
+        }
+
+        public DataSet Read(string cmd) {
+            throw new NotImplementedException();
+        }
+
+
+        public void Open() {
+            throw new NotImplementedException();
         }
     } 
 }

@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Ergolys;
 
-namespace Ergolys.ObjectModels {
-    interface IInterface {
+namespace Ergolys {
+    public interface IInterface {
         void ServiceWriteLine();
     }
 }
