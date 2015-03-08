@@ -8,17 +8,3 @@ C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\bin\Debug\EntityFramework
 C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\bin\Debug\EntityFramework.xml
 C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Klaus\Desktop\Andrew\CodeBase\Ergolys\Ergolys\obj\Debug\Ergolys.csprojResolveAssemblyReference.cache
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\Ergolys.exe.config
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\ObjectModels\NORTHWND.MDF
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\ObjectModels\NORTHWND_log.ldf
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\Ergolys.exe
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\Ergolys.pdb
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\EntityFramework.dll
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\EntityFramework.xml
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\obj\Debug\Ergolys.exe
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\obj\Debug\Ergolys.pdb
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\obj\Debug\Ergolys.csprojResolveAssemblyReference.cache
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\DataAccess.dll
-C:\Users\Klaus\Desktop\Andrew\github\Ergolys\bin\Debug\DataAccess.pdb

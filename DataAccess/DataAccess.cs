@@ -6,19 +6,12 @@ using System.Threading.Tasks;
 using System.Data.Sql;
 using System.Data;
 using System.Data.SqlClient;
+using Ergolys.DataAccess;
 
 namespace Ergolys.DataAccess {
     public class DataAccess : IDataAccess {
 
-        //Directory.GetFiles("..\\..\\ObjectModels\\NORTHWND.MDF");
-        //SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=..\\..\\ObjectModels\\NORTHWND.MDF;Integrated Security=True");
-        //SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=\..\..\ObjectModels\NORTHWND.MDF;Integrated Security=True");//
-        //SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=\\..\\..\\ObjectModels\\" + "NORTHWND.MDF;Integrated Security=True");
         SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Klaus\Desktop\Andrew\github\Ergolys\ObjectModels\NORTHWND.MDF;Integrated Security=True");
-        //string[] path = Directory.GetFiles("..\\..\\ObjectModels\\");
-
-        //string path = "..\\..\\ObjectModels";
-        //SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Klaus\Desktop\Andrew\github\Ergolys\ObjectModels\NORTHWND.MDF;Integrated Security=True");
 
         public void Create() {
             throw new NotImplementedException();
@@ -30,36 +23,32 @@ namespace Ergolys.DataAccess {
         /// <param name="select">Select from database</param>
         public DataSet Read(string cmd) {
 
-            string sc = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
-            string us = "Data Source=" + sc.Remove(0, 6) + "\\NORTHWIND.MDF";
-            string fs = us.Replace("\",\"", ";");
-            //StringBuilder sb = new StringBuilder();
-            //sb.Replace("","");
+            IDataAccess _da = new DataAccess();
 
-            //SqlConnection conn = new SqlConnection {
-            //    ConnectionString = fs//"Data Source=" + sc.Remove(0,6) + "\\NORTHWIND.MDF"
-            //};
+            SqlConnection connection = new SqlConnection();
 
-            ////TODO:update string literal in App.config
-            //conn.ConnectionString.Replace(@"\\", @"");
-
-            //string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            //string path = (System.IO.Path.GetDirectoryName(executable));
-            //AppDomain.CurrentDomain.SetData("DataDirectory", path);
-
-            ////string path = "..\\..\\ObjectModels\\";
-            ////AppDomain.CurrentDomain.SetData("DataDirectory", path);
-            ////connection.Dispose();
-            connection.Close();
-            //ConnectionString = "Data Source=" + System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase) + "\\Database.sdf"
-            //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=..\..\ObjectModels\NORTHWIND.MDF;Integrated Security=True");
-            connection.Open();
-            //connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|Northwind.mdf;Integrated Security=True");
-            SqlCommand command = new SqlCommand(cmd, connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
+
+            string sc = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
+            string us = "Data Source=" + sc.Remove(0, 6) + "\\NORTHWIND.MDF";
+            string fs = us.Replace("\\", "\\");
+
+            SqlCommand command = new SqlCommand("Select * from Orders", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
             adapter.Fill(ds);
+
+
+            _da = new DataAccess();
+            _da.Open();
+            connection.ConnectionString = fs;
+
+
+            connection.Open();
+
+            ds = _da.Read("Select * from Orders");
+            dt = ds.Tables[0];
+
             return ds;
         }
 
@@ -79,10 +68,5 @@ namespace Ergolys.DataAccess {
             connection.Dispose();
             connection.Close();
         }
-
-        public DataSet Read() {
-            throw new NotImplementedException();
-        }
-
-        }
     }
+}

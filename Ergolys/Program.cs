@@ -17,7 +17,7 @@ namespace Ergolys
     {
         public static void Main(string[] args) {
             #region TestMethods
-
+            
             //SMTPOutgoing smptOutgoing = new SMTPOutgoing();
             //smptOutgoing.SMTP("","","","");
             //Console.WriteLine("Complete");
@@ -35,8 +35,6 @@ namespace Ergolys
             _da = new DataAccess.DataAccess();
             _da.Open();
             DataSet ds = _da.Read("Select * from Orders");
-            
-            
             DataTable dt = ds.Tables[0];
 
             //Refernce another project (MVC)
