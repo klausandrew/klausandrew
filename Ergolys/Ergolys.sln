@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "..\DataAccess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "..\DataModel\DataModel.csproj", "{36A2AE3B-C8DA-4282-AA8C-1871E0F4222D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiers", "AccessModifiers\AccessModifiers.csproj", "{87664D1F-CE6B-47CD-BF96-283393A2A0B5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ergolys.UnitTest", "..\Ergolys.UnitTest\Ergolys.UnitTest.csproj", "{00C5006D-151D-42AA-B15A-DBB2D77017D9}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Northwind", "..\Northwind\Northwind.sqlproj", "{84E756DC-0A5C-4F4F-9FFF-E8679146DBC7}"
@@ -49,10 +47,6 @@ Global
 		{36A2AE3B-C8DA-4282-AA8C-1871E0F4222D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36A2AE3B-C8DA-4282-AA8C-1871E0F4222D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36A2AE3B-C8DA-4282-AA8C-1871E0F4222D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87664D1F-CE6B-47CD-BF96-283393A2A0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87664D1F-CE6B-47CD-BF96-283393A2A0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87664D1F-CE6B-47CD-BF96-283393A2A0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87664D1F-CE6B-47CD-BF96-283393A2A0B5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{00C5006D-151D-42AA-B15A-DBB2D77017D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{00C5006D-151D-42AA-B15A-DBB2D77017D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00C5006D-151D-42AA-B15A-DBB2D77017D9}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -26,7 +26,6 @@ namespace Ergolys
             //ADO.NET connection
             IDataAccess _da = new DataAccess.DataAccess();
 
-            NorthwindEntities dbContext = new NorthwindEntities();
             //var query = from p in dbContext.ProductSet
             //            where p.Categories.CategoryName == "Seafood"
             //            select p;

@@ -64,9 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Applications\Applications.cs" />
-    <Compile Include="NorthwindEntities.cs" />
     <Compile Include="ObjectModels\Home.cs" />
-    <Compile Include="IInterface.cs" />
     <Compile Include="ObjectModels\Product.cs" />
     <Compile Include="ObjectModels\Request.cs" />
     <Compile Include="ObjectModels\Service.cs" />

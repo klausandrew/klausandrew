@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ergolys
 {
-    class Service : IInterface
+    class Service
     {
         public void ServiceWriteLine() {
             Console.WriteLine("ServiceClass");
