@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using Ergolys.DataAccess;
 using System.IO;
 using System.Reflection;
+using Moq;
 
 namespace Ergolys.UnitTest {
     [TestClass]
@@ -17,7 +18,10 @@ namespace Ergolys.UnitTest {
             IDataAccess _da = new DataAccess.DataAccess();
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
-            
+
+            Mock<DataSet> moqOrders = new Mock<DataSet>();
+
+            //Solution directory TODO: |DataDirectory|
             string dir = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
             
             //SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Klaus\Desktop\Andrew\github\Ergolys\ObjectModels\NORTHWND.MDF;Integrated Security=True");
