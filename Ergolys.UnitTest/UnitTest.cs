@@ -1,13 +1,12 @@
-﻿using System;
+﻿using Ergolys.DataAccess;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Ergolys.DataAccess;
-using System.Data;
-using System.Xml;
-using System.Data.SqlClient;
-using Ergolys.DataAccess;
-using System.IO;
-using System.Reflection;
 using Moq;
+using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
+using System.Net;
+using System.Text;
 
 namespace Ergolys.UnitTest {
     [TestClass]
@@ -34,6 +33,39 @@ namespace Ergolys.UnitTest {
 
             adapter.Fill(ds);
             dt=ds.Tables[0];
+        }
+
+        [TestMethod]
+        public void AccessWebPage() {
+
+            WebClient webClient = new WebClient();
+            webClient.Credentials = new System.Net.NetworkCredential("UserName", "Password", "Domain");
+            string pageHTML = webClient.DownloadString("https://online.wellsfargo.com/cgi-bin/signon.cgi");
+
+            //TODO: Add creditials to page html and run http put request.
+
+            WebRequest myWebRequest = WebRequest.Create("https://online.wellsfargo.com/cgi-bin/signon.cgi");
+            WebResponse myWebResponse = myWebRequest.GetResponse();
+            Stream ReceiveStream = myWebResponse.GetResponseStream();
+            Encoding encode = System.Text.Encoding.GetEncoding("utf-8");
+            StreamReader readStream = new StreamReader(ReceiveStream, encode);
+            string strResponse = readStream.ReadToEnd();
+
+            //TODO: writes markup without css formatting
+            string strFilePath = @"C:\Users\Klaus\Desktop\Andrew\github\Ergolys.UnitTest\TestFile.cgi";
+
+            //parse file for un an pw field
+            //string.Parse(strFilePath.Substring(0));
+
+            StreamWriter oSw = new StreamWriter(strFilePath);
+            oSw.WriteLine(strResponse);
+            oSw.Close();
+            readStream.Close();
+            myWebResponse.Close(); 
+
+            Console.WriteLine("Test");
+            Console.ReadLine();
+            Assert.Fail("All tests are designed to fail, at first...");
         }
     }
 }
