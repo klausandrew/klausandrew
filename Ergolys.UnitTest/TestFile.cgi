@@ -254,7 +254,7 @@ function collectPcPrint() {
 					</div>
 					<div class="formCtlColumn">
 						<input type="text" name="userid" id="username" size="20" maxlength="14" accesskey="U" onclick="FocusNeeded=false;" onkeypress="FocusNeeded=false;" tabindex="1"/>
-					</div>
+123					</div>
 				</div>
 				<div class="formPseudoRow">
 					<div class="labelColumn">
@@ -266,7 +266,7 @@ function collectPcPrint() {
 						
 					</div>
 					<div class="formCtlColumn">
-						<input type="password" name="password" id="password" size="20" maxlength="14" tabindex="2"/><br/>
+						<input type="password" name="password" id="password" size="20" maxlength="14" tabindex="2"/>password<br/>
 						<a href="https://www.wellsfargo.com/help/faqs/signon_faqs" tabindex="4">Username/Password Help</a>
 						<br />
 						<br />

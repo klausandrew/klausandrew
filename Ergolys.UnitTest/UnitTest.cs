@@ -42,6 +42,8 @@ namespace Ergolys.UnitTest {
             webClient.Credentials = new System.Net.NetworkCredential("UserName", "Password", "Domain");
             string pageHTML = webClient.DownloadString("https://online.wellsfargo.com/cgi-bin/signon.cgi");
 
+            pageHTML = "";
+
             //TODO: Add creditials to page html and run http put request.
 
             WebRequest myWebRequest = WebRequest.Create("https://online.wellsfargo.com/cgi-bin/signon.cgi");
