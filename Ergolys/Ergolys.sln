@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSoap", "..\RestSoap\Res
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageModule", "..\ImageModule\ImageModule.csproj", "{1A6F2C03-56C3-4E0C-A1FA-3043CDF019C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearch", "..\ElasticSearch\ElasticSearch.csproj", "{72AE2729-0374-4565-8933-7BBA10F74D75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{1A6F2C03-56C3-4E0C-A1FA-3043CDF019C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A6F2C03-56C3-4E0C-A1FA-3043CDF019C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A6F2C03-56C3-4E0C-A1FA-3043CDF019C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72AE2729-0374-4565-8933-7BBA10F74D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AE2729-0374-4565-8933-7BBA10F74D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AE2729-0374-4565-8933-7BBA10F74D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AE2729-0374-4565-8933-7BBA10F74D75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
