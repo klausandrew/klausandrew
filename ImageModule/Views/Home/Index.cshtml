@@ -18,6 +18,72 @@
         </div>
     </section>
 }
+
+    @*<head>
+        <title>StudioJS Demo</title>
+        <link href="css/reset.css" rel="Stylesheet" type="text/css" />
+        <link href="css/ui-darkness/jquery-ui-1.9.1.custom.css" type="text/css" rel="Stylesheet" />
+        <link href="css/jquery.Jcrop.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery.imagestudio.css" rel="stylesheet" type="text/css" />
+
+        <%--TODO:Update style controls/classes no render output--%>
+        <style type="text/css">
+            /*.selected { border-color: white !important; }*/
+            .imagePicker img {
+                border: 0px solid #010101;
+                padding: 0px;
+            }
+
+            .imagePicker {
+                height: 150px;
+                overflow: auto;
+                white-space: nowrap;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+
+            body {
+                background-color: Black;
+            }
+        </style>
+    </head>
+    <body>
+        
+
+            <div class="imagePicker">
+                <%--<asp:Literal ID='images' runat="server" />--%>
+            </div>
+
+            <div class="studio1"></div>
+
+            <script src="js/libs/jquery-1.8.2.min.js" type="text/javascript"></script>
+            <script src="js/libs/underscore-min.js" type="text/javascript"></script>
+            <script src="js/libs/jquery-ui-1.9.1.custom.min.js" type="text/javascript"></script>
+            <script src="js/jquery.Jcrop.js" type="text/javascript"></script>
+            <script src="js/jquery.jcrop.preview.js" type="text/javascript"></script>
+            <script src="js/ImageResizer.js" type="text/javascript"></script>
+            <script src="js/jquery.overdraw.js" type="text/javascript"></script>
+            <script src="js/jquery.imagestudio.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                $(function () {
+                    var cl = {};
+                    cl.studio = $('div.studio1');
+                    $('.imagePicker img').click(function () {
+                        $('.imagePicker img').removeClass('selected');
+                        var e = $(this);
+                        e.addClass('selected');
+                        cl.thumb = e;
+                        cl.studio.ImageStudio({
+                            url: e.attr('src'),
+                            onchange: function (api) { e.attr('src', api.getStatus().url); }
+                        });
+                    });
+                    $($('.imagePicker img')[0]).click();
+                });
+            </script>
+    </body>*@
+
+
 <h3>We suggest the following:</h3>
 <ol class="round">
     <li class="one">
@@ -43,3 +109,4 @@
         <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
     </li>
 </ol>
+
