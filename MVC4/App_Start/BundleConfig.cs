@@ -8,6 +8,17 @@ namespace MVC4
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
+            //google APIS/Maps
+            bundles.Add(new ScriptBundle("").Include(
+                    "http://maps.googleapis.com/maps/api/js",
+                    "http://maps.googleapis.com/maps/api/js?key=YOUR_KEY",
+                    "~/Scripts/google.js",
+                    "~/Scripts/googleMaps.js"
+                ));
+
+            //kendo
+            bundles.Add(new ScriptBundle("~/Scripts/js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 

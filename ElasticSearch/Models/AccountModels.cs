@@ -5,6 +5,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Globalization;
 using System.Web.Security;
+using System.Data.Entity;
+using System;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 
 namespace ElasticSearch.Models {
     public class UsersContext : DbContext {
@@ -12,7 +16,7 @@ namespace ElasticSearch.Models {
             : base("DefaultConnection") {
         }
 
-        public DbSet<UserProfile> UserProfiles { get; set; }
+        //public DbSet<UserProfile> UserProfiles { get; set; }
     }
 
     [Table("UserProfile")]

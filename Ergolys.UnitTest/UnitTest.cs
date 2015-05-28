@@ -1,17 +1,23 @@
 ﻿using Ergolys.DataAccess;
+using Ergolys.NorthwindEntityContext;
+using ImageModule.Models;
+using ImageModule.Models.ImageModuleRepository;
+using Json;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text;
 
 namespace Ergolys.UnitTest {
+
     [TestClass]
     public class ErgolysUnitTests {
-
         [TestMethod]
         public void DataAccess() {
             IDataAccess _da = new DataAccess.DataAccess();
@@ -22,22 +28,100 @@ namespace Ergolys.UnitTest {
 
             //Solution directory TODO: |DataDirectory|
             string dir = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-            
+
             //SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Klaus\Desktop\Andrew\github\Ergolys\ObjectModels\NORTHWND.MDF;Integrated Security=True");
-            SqlConnection connection = new SqlConnection(String.Format(@"Data Source=(LocalDB)\v11.0;AttachDbFilename={0}{1};Integrated Security=True",dir,"\\Northwind\\Data\\NORTHWND.MDF"));
-            
+            SqlConnection connection =
+                new SqlConnection(
+                    String.Format(@"Data Source=(LocalDB)\v11.0;AttachDbFilename={0}{1};Integrated Security=True", dir,
+                        "\\Northwind\\Data\\NORTHWND.MDF"));
+
             connection.Open();
-            
+
             SqlCommand command = new SqlCommand("Select * from Orders", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
 
             adapter.Fill(ds);
-            dt=ds.Tables[0];
+            dt = ds.Tables[0];
         }
 
         [TestMethod]
-        public void AccessWebPage() {
+        public void GetNWEntities() {
 
+            ImagesDBContext image = new ImagesDBContext();
+            for (int i = 0; i <= 100; i++) {
+                image.Images.Add(new ImageDetail() {
+                    UserId = i,
+                    Description = ""
+                });
+            }
+            IEnumerable<ImageDetail> img = (from r in image.Images
+                                            where r != null
+                                            select r).AsEnumerable();
+
+            Assert.IsNotNull(image);
+        }
+
+        [TestMethod]
+        public void ContextConnection() {
+
+            //unimportant
+            //SqlConnection conn = new SqlConnection();
+            //SqlCommand comm = new SqlCommand();
+
+            //comm.ExecuteReader();
+
+            //SqlDataAdapter adapter = new SqlDataAdapter();
+            //DataSet ds =new DataSet();
+            //adapter.Fill(ds);
+
+            //IEnumerable<Order> order = (from o in db.Orders
+            //    select o).AsEnumerable();
+        }
+
+        [TestMethod]
+        public void DataObject() {
+            NORTHWINDEntities db = new NORTHWINDEntities();
+
+            var records = (from o in db.Orders
+                           select o).AsEnumerable();
+
+            //db.Orders();
+            //Moq.Linq();
+            ImagesDBContext image = new ImagesDBContext();
+            for (int i = 0; i <= 100; i++) {
+                image.Images.Add(new ImageDetail() {
+                    UserId = i,
+                    Description = ""
+                });
+            }
+            IEnumerable<ImageDetail> img = (from r in image.Images
+                                            where r != null
+                                            select r).AsEnumerable();
+
+            //Moq.Linq(img);
+            //img.Cast<ImagesDBContext>(image)(img);
+
+            Assert.IsNotNull(image);
+        }
+
+        [TestMethod]
+        public void DbContextConverter(IEnumerable<ImagesDBContext> collection) {
+            //return new DbContext();
+        }
+
+        [TestMethod]
+        public void DbContextConverter(IEnumerable<ImageDetail> contextData) {
+            //return new DbContext();
+        }
+
+        [TestMethod]
+        public void DbContextConverter(IEnumerable<object> collection) {
+            //return new DbContext();
+        }
+
+
+        [TestMethod]
+        public void AccessWebPage() {
             WebClient webClient = new WebClient();
             webClient.Credentials = new System.Net.NetworkCredential("UserName", "Password", "Domain");
             string pageHTML = webClient.DownloadString("https://online.wellsfargo.com/cgi-bin/signon.cgi");
@@ -63,11 +147,48 @@ namespace Ergolys.UnitTest {
             oSw.WriteLine(strResponse);
             oSw.Close();
             readStream.Close();
-            myWebResponse.Close(); 
+            myWebResponse.Close();
 
             Console.WriteLine("Test");
             Console.ReadLine();
             Assert.Fail("All tests are designed to fail, at first...");
         }
-    }
+
+        [TestMethod]
+        public void FizzBuzz() {
+            StringBuilder print = new StringBuilder();
+            for (decimal i = 0; i <= 100; i++) {
+                print.Append(Environment.NewLine);
+                print.Append(i.ToString() + " - ");
+                print.Append(((i/3 % 1) == 0) ? "Fizz" : "");
+                print.AppendLine(((i/5 % 1) == 0) ? "Buzz" : "");
+            }
+        }
+
+        /// <summary>
+        /// apx. ~15min. 
+        /// </summary>
+        [TestMethod]
+        public void WriteFile() {
+                StringBuilder print = new StringBuilder();
+                for (decimal i = 0; i <= 100; i++) {
+                    print.Append(Environment.NewLine);
+                    print.Append(i.ToString() + " - ");
+                    print.Append(((i/3 % 1) == 0) ? "Fizz" : "");
+                    print.AppendLine(((i/5 % 1) == 0) ? "Buzz" : "");
+                }
+                string file = @"C:\Users\Klaus\Desktop\Andrew\github\Ergolys.UnitTest\FileStreamFromByteArray.txt";
+                FileStream writer = File.Open(file, FileMode.Truncate); 
+                writer.WriteAsync(print.ToString());
+                writer.Close();
+            }
+
+        [TestMethod]
+        public void parseJson() {
+            JsonParser json = new Json.JsonParser();
+            json(parseJson());
+        }
+    }    
 }
+
+        

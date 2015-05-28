@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1A6F2C03-56C3-4E0C-A1FA-3043CDF019C5}</ProjectGuid>
+    <ProjectGuid>{F4BF9339-A6D8-4829-80A0-42F7EDEF0C1B}</ProjectGuid>
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -20,7 +20,6 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,7 +29,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -39,91 +37,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Antlr3.Runtime.3.5.0.3-alpha002\lib\net20\Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Cloudinary">
-      <HintPath>..\Ergolys\packages\Cloudinary.0.0.5\lib\Cloudinary.dll</HintPath>
-    </Reference>
-    <Reference Include="CloudinaryDotNet">
-      <HintPath>..\Ergolys\packages\CloudinaryDotNet.1.0.20\lib\net40\CloudinaryDotNet.dll</HintPath>
-    </Reference>
-    <Reference Include="DataAnnotationsExtensions">
-      <HintPath>..\Ergolys\packages\DataAnnotationsExtensions.0.6.0.0\lib\NETFramework40\DataAnnotationsExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="DataAnnotationsExtensions.ClientValidation">
-      <HintPath>..\Ergolys\packages\DataAnnotationsExtensions.MVC3.0.6.0.0\lib\NETFramework40\DataAnnotationsExtensions.ClientValidation.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.Core">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.Core.4.3.4.13329\lib\net35-full\DotNetOpenAuth.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.Core.UI">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.Core.UI.4.3.4.13329\lib\net35-full\DotNetOpenAuth.Core.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.InfoCard">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.InfoCard.4.3.4.13329\lib\net35-full\DotNetOpenAuth.InfoCard.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.InfoCard.UI">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.InfoCard.UI.4.3.4.13329\lib\net35-full\DotNetOpenAuth.InfoCard.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth.Core.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OAuth.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth.Common">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth.Common.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OAuth.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth.Consumer">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth.Consumer.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth.ServiceProvider">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth.ServiceProvider.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OAuth.ServiceProvider.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth2">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth2.Core.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OAuth2.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth2.AuthorizationServer">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth2.AuthorizationServer.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OAuth2.AuthorizationServer.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth2.Client">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth2.Client.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OAuth2.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth2.Client.UI">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth2.Client.UI.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OAuth2.Client.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth2.ClientAuthorization">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth2.ClientAuthorization.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OAuth2.ClientAuthorization.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth2.ResourceServer">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth2.ResourceServer.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OAuth2.ResourceServer.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenId">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OpenId.Core.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OpenId.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenId.Provider">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OpenId.Provider.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OpenId.Provider.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenId.Provider.UI">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OpenId.Provider.UI.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OpenId.Provider.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty.UI">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OpenId.RelyingParty.UI.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OpenId.RelyingParty.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenId.UI">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OpenId.Core.UI.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OpenId.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenIdInfoCard.UI">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OpenIdInfoCard.UI.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OpenIdInfoCard.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenIdOAuth">
-      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OpenIdOAuth.4.3.4.13329\lib\net35-full\DotNetOpenAuth.OpenIdOAuth.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Ergolys\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -131,148 +46,49 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\Ergolys\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="ImageResizer">
-      <HintPath>..\Ergolys\packages\ImageResizer.3.4.3\lib\ImageResizer.dll</HintPath>
-    </Reference>
-    <Reference Include="ImageResizer4DotNet">
-      <HintPath>..\Ergolys\packages\ImageResizer4DotNet.2.5.0\lib\ImageResizer4DotNet.dll</HintPath>
-    </Reference>
-    <Reference Include="Json">
-      <HintPath>..\Ergolys\packages\JSON.1.0.1\lib\net40\Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Contracts">
-      <HintPath>..\Ergolys\packages\CodeContracts.Unofficial.1.0.0.2\lib\net35-client\Microsoft.Contracts.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Owin">
-      <HintPath>..\Ergolys\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security">
-      <HintPath>..\Ergolys\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Security.Twitter">
-      <HintPath>..\Ergolys\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\CommonServiceLocator.1.2\lib\portable-windows8+net40+sl5+windowsphone8\Microsoft.Practices.ServiceLocation.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Helpers">
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebHelpers.3.2.3\lib\net45\Microsoft.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\Ergolys\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Mvc">
-      <HintPath>..\Ergolys\packages\Mvc4Futures.4.0.20710.0\lib\net40\Microsoft.Web.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Mvc.Html.Bootstrap">
-      <HintPath>..\Ergolys\packages\Mvc.Html.Bootstrap.0.1.4666.41540\lib\net40\Mvc.Html.Bootstrap.dll</HintPath>
-    </Reference>
-    <Reference Include="MvcMembership">
-      <HintPath>..\Ergolys\packages\MvcMembership.3.8.0\lib\40\MvcMembership.dll</HintPath>
-    </Reference>
-    <Reference Include="Nest">
-      <HintPath>..\Ergolys\packages\NEST.Signed.0.12.0.0\lib\NET4\Nest.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Owin">
-      <HintPath>..\Ergolys\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="PagedList">
-      <HintPath>..\Ergolys\packages\PagedList.1.15.0.0\lib\net40\PagedList.dll</HintPath>
-    </Reference>
-    <Reference Include="PagedList.Mvc">
-      <HintPath>..\Ergolys\packages\PagedList.Mvc.3.18.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Rabbit.Bootstrap, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Rabbit.Bootstrap.MVC.1.1.0.0\lib\net40\Rabbit.Bootstrap.dll</HintPath>
-    </Reference>
-    <Reference Include="RazorEngine">
-      <HintPath>..\Ergolys\packages\RazorEngine.3.6.4\lib\net45\RazorEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="Simple.ImageResizer">
-      <HintPath>..\Ergolys\packages\Simple.ImageResizer.2.1.0\lib\net40\Simple.ImageResizer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.IdentityModel.Tokens.Jwt">
-      <HintPath>..\Ergolys\packages\System.IdentityModel.Tokens.Jwt.4.0.2.202250711\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Log" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
-    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
-    </Reference>
+    <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
-    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\Ergolys\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Ergolys\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
@@ -280,29 +96,64 @@
     <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="WebActivator">
-      <HintPath>..\Ergolys\packages\WebActivator.1.4.1\lib\net40\WebActivator.dll</HintPath>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.Data.2.0.30506.0\lib\net40\WebMatrix.Data.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.OAuth.2.0.30506.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
     </Reference>
-    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
-    </Reference>
-    <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.Data.3.2.3\lib\net45\WebMatrix.Data.dll</HintPath>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.WebData.2.0.30506.0\lib\net40\WebMatrix.WebData.dll</HintPath>
     </Reference>
     <Reference Include="DotNetOpenAuth.AspNet, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\Ergolys\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Http.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -320,235 +171,34 @@
       <Private>True</Private>
       <HintPath>..\Ergolys\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
     </Reference>
-    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.WebData.3.2.3\lib\net45\WebMatrix.WebData.dll</HintPath>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\Ergolys\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Advanced.aspx.cs">
-      <DependentUpon>Advanced.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Advanced.aspx.designer.cs" />
     <Compile Include="App_Start\AuthConfig.cs" />
-    <Compile Include="App_Start\BootstrapBundleConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\ExampleLayoutsRouteConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\MvcMembership.cs" />
-    <Compile Include="App_Start\RegisterClientValidationExtensions.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\MvcMembership\Controllers\UserAdministrationController.cs" />
-    <Compile Include="Areas\MvcMembership\Models\UserAdministration\CreateUserViewModel.cs" />
-    <Compile Include="Areas\MvcMembership\Models\UserAdministration\DetailsViewModel.cs" />
-    <Compile Include="Areas\MvcMembership\Models\UserAdministration\IndexViewModel.cs" />
-    <Compile Include="Areas\MvcMembership\Models\UserAdministration\RoleViewModel.cs" />
-    <Compile Include="Areas\MvcMembership\MvcMembershipAreaRegistration.cs" />
-    <Compile Include="BootstrapSupport\ControlGroupExtensions.cs" />
-    <Compile Include="BootstrapSupport\HtmlHelpers\GlyphIcons.cs" />
-    <Compile Include="BootstrapSupport\HtmlHelpers\Paging.cs" />
-    <Compile Include="BootstrapSupport\ViewHelperExtensions.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\BootstrapBaseController.cs" />
-    <Compile Include="Controllers\ExampleLayoutsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ModalController.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Controllers\UserGalleryController.cs" />
+    <Compile Include="Controllers\UserModalController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
-    <Compile Include="Free.htm.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Free.htm.designer.cs">
-      <DependentUpon>Free.htm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ImageResizer.Plugins.AdvanceFilters\AdvanceFilter.cs" />
-    <Compile Include="ImageResizer.Plugins.AdvanceFilters\AssemblyInfo.cs" />
-    <Compile Include="ImageResizer.Plugins.AdvanceFilters\AutoWhiteBalance.cs" />
-    <Compile Include="ImageResizer.Plugins.AdvanceFilters\FeatherEdge.cs" />
-    <Compile Include="ImageResizer.Plugins.AdvanceFilters\SharedAssemblyInfo.cs" />
-    <Compile Include="ImageResizer.Plugins.CloudAPI\CloudinaryAPI.cs" />
-    <Compile Include="ImageResizer.Plugins.DiskCache\CacheResult.cs" />
-    <Compile Include="ImageResizer.Plugins.DiskCache\CustomDiskCache.cs" />
-    <Compile Include="ImageResizer.Plugins.DiskCache\DiskCache.cs" />
-    <Compile Include="ImageResizer.Plugins.DiskCache\LockProvider.cs" />
-    <Compile Include="ImageResizer.Plugins.DiskCache\SharedAssemblyInfo.cs" />
-    <Compile Include="ImageResizer.Plugins.DiskCache\UrlHasher.cs" />
-    <Compile Include="ImageResizer.Plugins.DiskCache\WebConfigWriter.cs" />
-    <Compile Include="ImageResizer.Plugins.Faces\AlternateResponseException.cs" />
-    <Compile Include="ImageResizer.Plugins.Faces\CropAroundPlugin.cs" />
-    <Compile Include="ImageResizer.Plugins.Faces\DetectionResponse.cs" />
-    <Compile Include="ImageResizer.Plugins.Faces\FaceDetection.cs" />
-    <Compile Include="ImageResizer.Plugins.Faces\FacesPlugin.cs" />
-    <Compile Include="ImageResizer.Plugins.Faces\FeatureDetectionBase.cs" />
-    <Compile Include="ImageResizer.Plugins.Faces\FeatureDetectionUtils.cs" />
-    <Compile Include="ImageResizer.Plugins.Faces\SharedAssemblyInfo.cs" />
-    <Compile Include="ImageResizer.Plugins.RedEye\AdaptiveCircleFill.cs" />
-    <Compile Include="ImageResizer.Plugins.RedEye\Advanced.aspx.cs" />
-    <Compile Include="ImageResizer.Plugins.RedEye\EyeDetection.cs" />
-    <Compile Include="ImageResizer.Plugins.RedEye\ManualSearcher.cs" />
-    <Compile Include="ImageResizer.Plugins.RedEye\RedEyeFilter.cs" />
-    <Compile Include="ImageResizer.Plugins.RedEye\RedEyePlugin.cs" />
-    <Compile Include="ImageResizer.Plugins.RedEye\SharedAssemblyInfo.cs" />
-    <Compile Include="ImageResizer.Plugins.RemoteReader\RemoteReaderPlugin.cs" />
-    <Compile Include="ImageResizer.Plugins.RemoteReader\RemoteRequestEventArgs.cs" />
-    <Compile Include="ImageResizer.Plugins.RemoteReader\SharedAssemblyInfo.cs" />
-    <Compile Include="ImageResizer.Plugins.SeamCarving\CairJob.cs" />
-    <Compile Include="ImageResizer.Plugins.SeamCarving\CairManager.cs" />
-    <Compile Include="ImageResizer.Plugins.SeamCarving\CarveDotaPlotter.cs" />
-    <Compile Include="ImageResizer.Plugins.SeamCarving\LzwDecoder.cs" />
-    <Compile Include="ImageResizer.Plugins.SeamCarving\SeamCarvingPlugin.cs" />
-    <Compile Include="ImageResizer.Plugins.SeamCarving\SharedAssemblyInfo.cs" />
-    <Compile Include="ImageResizer.Plugins.SimpleFilters\SharedAssemblyInfo.cs" />
-    <Compile Include="ImageResizer.Plugins.SimpleFilters\SimpleFilter.cs" />
-    <Compile Include="ImageResizer\BoxEdges.cs" />
-    <Compile Include="ImageResizer\Caching\ICache.cs" />
-    <Compile Include="ImageResizer\Caching\ICacheProvider.cs" />
-    <Compile Include="ImageResizer\Caching\IResponseArgs.cs" />
-    <Compile Include="ImageResizer\Caching\IResponseHeaders.cs" />
-    <Compile Include="ImageResizer\Caching\ResponseArgs.cs" />
-    <Compile Include="ImageResizer\Caching\ResponseHeaders.cs" />
-    <Compile Include="ImageResizer\Collections\QuerystringBase.cs" />
-    <Compile Include="ImageResizer\Collections\ReadOnlyDictionary.cs" />
-    <Compile Include="ImageResizer\Collections\ReverseEnumerator.cs" />
-    <Compile Include="ImageResizer\Collections\SafeList.cs" />
-    <Compile Include="ImageResizer\Configuration\CacheSelectionEventArgs.cs" />
-    <Compile Include="ImageResizer\Configuration\Config.cs" />
-    <Compile Include="ImageResizer\Configuration\ICacheSelectionEventArgs.cs" />
-    <Compile Include="ImageResizer\Configuration\ImageResizer.ResizerSection.cs" />
-    <Compile Include="ImageResizer\Configuration\IPipelineConfig.cs" />
-    <Compile Include="ImageResizer\Configuration\Issues\ConfigChecker.cs" />
-    <Compile Include="ImageResizer\Configuration\Issues\IIssue.cs" />
-    <Compile Include="ImageResizer\Configuration\Issues\IIssueProvider.cs" />
-    <Compile Include="ImageResizer\Configuration\Issues\IIssueReceiver.cs" />
-    <Compile Include="ImageResizer\Configuration\Issues\Issue.cs" />
-    <Compile Include="ImageResizer\Configuration\Issues\IssueGatherer.cs" />
-    <Compile Include="ImageResizer\Configuration\Issues\IssueSeverity.cs" />
-    <Compile Include="ImageResizer\Configuration\Issues\IssueSink.cs" />
-    <Compile Include="ImageResizer\Configuration\IUrlAuthorizationEventArgs.cs" />
-    <Compile Include="ImageResizer\Configuration\IUrlEventArgs.cs" />
-    <Compile Include="ImageResizer\Configuration\Logging\ILogger.cs" />
-    <Compile Include="ImageResizer\Configuration\Logging\ILoggerProvider.cs" />
-    <Compile Include="ImageResizer\Configuration\Logging\ILogManager.cs" />
-    <Compile Include="ImageResizer\Configuration\NativeDependencyManager.cs" />
-    <Compile Include="ImageResizer\Configuration\PipelineConfig.cs" />
-    <Compile Include="ImageResizer\Configuration\UrlAuthorizationEventArgs.cs" />
-    <Compile Include="ImageResizer\Configuration\UrlEventArgs.cs" />
-    <Compile Include="ImageResizer\Configuration\Xml\Node.cs" />
-    <Compile Include="ImageResizer\Configuration\Xml\Selector.cs" />
-    <Compile Include="ImageResizer\Encoding\IEncoder.cs" />
-    <Compile Include="ImageResizer\Encoding\IEncodingProvider.cs" />
-    <Compile Include="ImageResizer\Enumeration.cs" />
-    <Compile Include="ImageResizer\ExtensionMethods\Enum.cs" />
-    <Compile Include="ImageResizer\ExtensionMethods\NameValueCollection.cs" />
-    <Compile Include="ImageResizer\ExtensionMethods\Stream.cs" />
-    <Compile Include="ImageResizer\ImageBuilder.cs.cs" />
-    <Compile Include="ImageResizer\ImageJob.cs" />
-    <Compile Include="ImageResizer\ImageProcessingException.cs" />
-    <Compile Include="ImageResizer\Instructions.cs" />
-    <Compile Include="ImageResizer\InterceptionModule.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\AutoRotate.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\ClientCache.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\DefaultEncoder.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\DefaultSettings.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\Diagnostic.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\DiagnosticDisabledHandler.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\DiagnosticPageHandler.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\DropShadow.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\FolderResizeSyntax.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\Gradient.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\IEPngFix.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\Image404.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\ImageHandlerSyntax.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\ImageInfoAPI.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\NoCache.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\NoCacheHandler.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\Presets.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\SizeLimiting.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\SizeLimits.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\SpeedOrQuality.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\Trial.cs" />
-    <Compile Include="ImageResizer\Plugins\Basic\VirtualFolder.cs" />
-    <Compile Include="ImageResizer\Plugins\IVirtualFileCache.cs" />
-    <Compile Include="ImageResizer\Plugins\FileSignature.cs" />
-    <Compile Include="ImageResizer\Plugins\ICurrentConfigProvider.cs" />
-    <Compile Include="ImageResizer\Plugins\IFileExtentionPlugin.cs" />
-    <Compile Include="ImageResizer\Plugins\IFileSignatureProvider.cs" />
-    <Compile Include="ImageResizer\Plugins\ILicenseService.cs" />
-    <Compile Include="ImageResizer\Plugins\ILicenseStore.cs" />
-    <Compile Include="ImageResizer\Plugins\IMultiInstancePlugin.cs" />
-    <Compile Include="ImageResizer\Plugins\IPlugin.cs" />
-    <Compile Include="ImageResizer\Plugins\IQuerystringPlugin.cs" />
-    <Compile Include="ImageResizer\Plugins\IRedactDiagnostics.cs" />
-    <Compile Include="ImageResizer\Plugins\ISettingsModifier.cs" />
-    <Compile Include="ImageResizer\Plugins\IVirtualBitmapFile.cs" />
-    <Compile Include="ImageResizer\Plugins\IVirtualFile.cs" />
-    <Compile Include="ImageResizer\Plugins\IVirtualFileSourceCacheKey.cs" />
-    <Compile Include="ImageResizer\Plugins\IVirtualFileWithModifiedDate.cs" />
-    <Compile Include="ImageResizer\Plugins\IVirtualImageProvider.cs" />
-    <Compile Include="ImageResizer\Plugins\VirtualFileWrapper.cs" />
-    <Compile Include="ImageResizer\ResizeSettings.cs" />
-    <Compile Include="ImageResizer\Resizing\AbstractImageProcessor.cs" />
-    <Compile Include="ImageResizer\Resizing\BitmapTag.cs" />
-    <Compile Include="ImageResizer\Resizing\BoxPadding.cs" />
-    <Compile Include="ImageResizer\Resizing\BuilderExtention.cs" />
-    <Compile Include="ImageResizer\Resizing\ImageState.cs" />
-    <Compile Include="ImageResizer\Resizing\LayoutBuilder.cs" />
-    <Compile Include="ImageResizer\SharedAssemblyInfo.cs" />
-    <Compile Include="ImageResizer\Util\AssemblyAttributes.cs" />
-    <Compile Include="ImageResizer\Util\DictionaryUtils.cs" />
-    <Compile Include="ImageResizer\Util\ParseUtils.cs" />
-    <Compile Include="ImageResizer\Util\PathUtils.cs" />
-    <Compile Include="ImageResizer\Util\PolygonMath.cs" />
-    <Compile Include="ImageResizer\Util\SeekableStreamWrapper.cs" />
-    <Compile Include="ImageResizer\Util\StreamUtils.cs" />
-    <Compile Include="ImageResizer\Util\UrlHasher.cs" />
-    <Compile Include="ImageResizer\Util\Utils.cs" />
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\HomeInputModel.cs" />
-    <Compile Include="NavigationRoutes\INavigationRouteFilter.cs" />
-    <Compile Include="NavigationRoutes\NamedRoute.cs" />
-    <Compile Include="NavigationRoutes\NavigationExtensions.cs" />
-    <Compile Include="NavigationRoutes\NavigationRouteConfigurationExtensions.cs" />
-    <Compile Include="NavigationRoutes\NavigationRouteFilter.cs" />
+    <Compile Include="Models\ImageModuleRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="Simple.htm.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Simple.htm.designer.cs">
-      <DependentUpon>Simple.htm.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Advanced.aspx" />
-    <Content Include="Basic.htm" />
-    <Content Include="Content\body.css" />
-    <Content Include="Content\bootstrap-mvc-validation.css" />
-    <Content Include="Content\bootstrap-responsive.css" />
-    <Content Include="Content\bootstrap-responsive.min.css" />
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\images\glyphicons-halflings-white.png" />
-    <Content Include="Content\images\glyphicons-halflings.png" />
-    <Content Include="Content\MvcMembership.css" />
-    <Content Include="Content\PagedList.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -603,156 +253,24 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
-    <Content Include="css\Jcrop.gif" />
-    <Content Include="css\jquery.Jcrop.css" />
-    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="fountain-small.jpg" />
-    <Content Include="Free.htm" />
     <Content Include="Global.asax" />
-    <Content Include="Icon.png" />
-    <Content Include="ImageResizer.Plugins.AdvanceFilters\license.txt" />
-    <Content Include="ImageResizer.Plugins.DiskCache\configuration.txt" />
-    <Content Include="ImageResizer.Plugins.DiskCache\LastAccessedUtc.txt" />
-    <Content Include="ImageResizer.Plugins.DiskCache\license.txt" />
-    <Content Include="ImageResizer.Plugins.DiskCache\todo.txt" />
-    <Content Include="ImageResizer.Plugins.Faces\Native.xml" />
-    <Content Include="ImageResizer.Plugins.RedEye\Advanced.aspx" />
-    <Content Include="ImageResizer.Plugins.RedEye\algorithm.txt" />
-    <Content Include="ImageResizer.Plugins.RedEye\Basic.htm" />
-    <Content Include="ImageResizer.Plugins.RedEye\css\Jcrop.gif" />
-    <Content Include="ImageResizer.Plugins.RedEye\css\jquery.Jcrop.css" />
-    <Content Include="ImageResizer.Plugins.RedEye\fountain-small.jpg" />
-    <Content Include="ImageResizer.Plugins.RedEye\js\jquery.Jcrop.js" />
-    <Content Include="ImageResizer.Plugins.RedEye\js\jquery.Jcrop.min.js" />
-    <Content Include="ImageResizer.Plugins.RedEye\js\jquery.jcrop.preview.js" />
-    <Content Include="ImageResizer.Plugins.RedEye\js\jquery.min.js" />
-    <Content Include="ImageResizer.Plugins.RedEye\manual-algorithm.txt" />
-    <Content Include="ImageResizer.Plugins.RedEye\Native.xml" />
-    <Content Include="ImageResizer.Plugins.RedEye\red-leaf.jpg" />
-    <Content Include="ImageResizer.Plugins.RemoteReader\license.txt" />
-    <Content Include="ImageResizer.Plugins.SeamCarving\CAIR.exe" />
-    <Content Include="ImageResizer.Plugins.SeamCarving\pthreadVSE2.dll" />
-    <Content Include="ImageResizer.Plugins.SimpleFilters\license.txt" />
-    <Content Include="ImageResizer\app.config" />
-    <Content Include="ImageResizer\packages.config" />
-    <Content Include="ImageResizer.Plugins.AdvanceFilters\app.config" />
-    <Content Include="ImageResizer.Plugins.AdvanceFilters\packages.config" />
-    <Content Include="ImageResizer.Plugins.DiskCache\app.config" />
-    <Content Include="ImageResizer.Plugins.DiskCache\packages.config" />
-    <Content Include="ImageResizer.Plugins.Faces\app.config" />
-    <Content Include="ImageResizer.Plugins.Faces\packages.config" />
-    <Content Include="ImageResizer.Plugins.Faces\readme.md" />
-    <Compile Include="ImageResizer.Plugins.RedEye\Advanced.aspx.designer.cs" />
-    <Content Include="ImageResizer.Plugins.RedEye\app.config" />
-    <Content Include="ImageResizer.Plugins.RedEye\packages.config" />
-    <Content Include="ImageResizer.Plugins.RemoteReader\app.config" />
-    <Content Include="ImageResizer.Plugins.RemoteReader\packages.config" />
-    <Content Include="ImageResizer.Plugins.SeamCarving\app.config" />
-    <Content Include="ImageResizer.Plugins.SeamCarving\packages.config" />
-    <Content Include="ImageResizer.Plugins.SimpleFilters\app.config" />
-    <Content Include="ImageResizer.Plugins.SimpleFilters\packages.config" />
-    <Content Include="Images\text.psd" />
-    <Content Include="CodeTemplates\EFModelFromDatabase\EntityType.cs.t4" />
-    <Content Include="CodeTemplates\EFModelFromDatabase\Context.cs.t4" />
-    <Content Include="Areas\MvcMembership\Views\Web.config" />
-    <Content Include="Areas\MvcMembership\Views\UserAdministration\UsersRoles.cshtml" />
-    <Content Include="Areas\MvcMembership\Views\UserAdministration\Role.cshtml" />
-    <Content Include="Areas\MvcMembership\Views\UserAdministration\Password.cshtml" />
-    <Content Include="Areas\MvcMembership\Views\UserAdministration\Index.cshtml" />
-    <Content Include="Areas\MvcMembership\Views\UserAdministration\Details.cshtml" />
-    <Content Include="Areas\MvcMembership\Views\UserAdministration\CreateUser.cshtml" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
-    <Content Include="ImageResizer\bugs.txt" />
-    <Content Include="ImageResizer\exceptions.txt" />
-    <Content Include="ImageResizer\gdi-bugs.txt" />
-    <Content Include="ImageResizer\license.txt" />
-    <Content Include="ImageResizer\plugin-notes.txt" />
-    <Content Include="ImageResizer\Resizing\UnitR.cs.txt" />
-    <Content Include="ImageResizer\todo.txt" />
-    <Content Include="ImageResizer\totest.txt" />
-    <Content Include="Images\2_computers.gif" />
-    <Content Include="Images\clock.gif" />
-    <Content Include="Images\clock2.gif" />
-    <Content Include="Images\counter.gif" />
-    <Content Include="Images\cs3-cmyk-8bit.jpg" />
-    <Content Include="Images\cs3-gray-dotgain20.jpg" />
-    <Content Include="Images\cs3-gray.jpg" />
-    <Content Include="Images\fountain-small.jpg" />
-    <Content Include="Images\gps-metadata-holder.jpg" />
-    <Content Include="Images\grass.jpg" />
-    <Content Include="Images\horizontal-line.gif" />
-    <Content Include="Images\image.jpg" />
-    <Content Include="Images\Moon_256.png" />
-    <Content Include="Images\optical.gif" />
-    <Content Include="Images\quality-original.jpg" />
-    <Content Include="Images\red-eye-wikipedia.jpg" />
-    <Content Include="Images\red-leaf.jpg" />
-    <Content Include="Images\resizer-icon-256.png" />
-    <Content Include="Images\resizer-icon-64.png" />
-    <Content Include="Images\resizer.png" />
-    <Content Include="Images\rose-leaf.jpg" />
-    <Content Include="Images\rounding-error-2.jpg" />
-    <Content Include="Images\rounding-error.jpg" />
-    <Content Include="Images\rounding-error.png" />
-    <Content Include="Images\sample.tif" />
-    <Content Include="Images\Saturn_256.png" />
-    <Content Include="Images\Sun_256.png" />
-    <Content Include="Images\tractor-tiny.jpg" />
-    <Content Include="Images\tractor.JPG" />
-    <Content Include="Images\tulip-leaf.jpg" />
-    <Content Include="Images\whitespace-image.jpg" />
-    <Content Include="js\jquery.Jcrop.js" />
-    <Content Include="js\jquery.Jcrop.min.js" />
-    <Content Include="js\jquery.jcrop.preview.js" />
-    <Content Include="js\jquery.min.js" />
-    <Content Include="red-leaf.jpg" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\html5shiv.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
-    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
-    <Content Include="Scripts\jquery-migrate-1.2.1.js" />
-    <Content Include="Scripts\jquery-migrate-1.2.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive-custom-for-bootstrap.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\json-serialize.js" />
-    <Content Include="Scripts\json-serialize.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\npm.js" />
-    <Content Include="Simple.htm" />
-    <Content Include="StudioJS\ImageResizer.js" />
-    <Content Include="StudioJS\jquery.imagestudio.js" />
-    <Content Include="StudioJS\jquery.Jcrop.js" />
-    <Content Include="StudioJS\jquery.jcrop.preview.js" />
-    <Content Include="StudioJS\jquery.overdraw.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -774,6 +292,7 @@
     <Content Include="Images\orderedList7.png" />
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
@@ -790,36 +309,25 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Shared\_html5shiv.cshtml" />
-    <Content Include="Scripts\jquery-1.9.1.min.map" />
-    <Content Include="Views\ExampleLayouts\TBD.cshtml" />
-    <Content Include="Views\ExampleLayouts\Starter.cshtml" />
-    <Content Include="Views\ExampleLayouts\SignIn.cshtml" />
-    <Content Include="Views\ExampleLayouts\Narrow.cshtml" />
-    <Content Include="Views\ExampleLayouts\Marketing.cshtml" />
-    <Content Include="Views\ExampleLayouts\Fluid.cshtml" />
-    <Content Include="Views\Shared\Index.cshtml" />
-    <Content Include="Views\Shared\Details.cshtml" />
-    <Content Include="Views\Shared\Create.cshtml" />
-    <Content Include="Views\Shared\_validationSummary.cshtml" />
-    <Content Include="Views\Shared\_BootstrapLayout.narrow.cshtml" />
-    <Content Include="Views\Shared\_BootstrapLayout.empty.cshtml" />
-    <Content Include="Views\Shared\_BootstrapLayout.basic.cshtml" />
-    <Content Include="Views\Shared\_alerts.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="ImageResizer.Plugins.DiskCache\Async\" />
-    <Folder Include="ImageResizer.Plugins.DiskCache\Cleanup\" />
-    <Folder Include="ImageResizer.Plugins.DiskCache\Index\" />
-    <Folder Include="ImageResizer.Plugins.DiskCache\OutputMemCache\" />
-    <Folder Include="ImageResizer.Plugins.DiskCache\SourceDiskCache\" />
-    <Folder Include="ImageResizer.Plugins.DiskCache\SourceMemCache\" />
-    <Folder Include="ImageResizer.Plugins.SeamCarving\SevenZipReduced\" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{A6C18F90-7A02-4FA9-AEE1-4835BAA1C412}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Northwind\Northwind.sqlproj">
+      <Project>{84e756dc-0a5c-4f4f-9fff-e8679146dbc7}</Project>
+      <Name>Northwind</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -837,7 +345,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>31283</DevelopmentServerPort>
+          <DevelopmentServerPort>4859</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:31283/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

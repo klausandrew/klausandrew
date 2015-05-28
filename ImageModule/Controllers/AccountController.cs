@@ -1,16 +1,15 @@
-﻿using DotNetOpenAuth.AspNet;
-using ImageModule.Filters;
-using ImageModule.Models;
-using Microsoft.Web.WebPages.OAuth;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Transactions;
+using System.Web;
 using System.Web.Mvc;
-using System.Web.Mvc.Html;
-
 using System.Web.Security;
+using DotNetOpenAuth.AspNet;
+using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
+using ImageModule.Filters;
+using ImageModule.Models;
 
 namespace ImageModule.Controllers {
     [Authorize]
@@ -19,7 +18,7 @@ namespace ImageModule.Controllers {
         //
         // GET: /Account/Login
 
-        [System.Web.Http.AllowAnonymous]
+        [AllowAnonymous]
         public ActionResult Login(string returnUrl) {
             ViewBag.ReturnUrl = returnUrl;
             return View();

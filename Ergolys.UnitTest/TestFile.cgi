@@ -34,9 +34,9 @@
 
 <title>Wells Fargo&nbsp;Sign On to View Your Accounts</title>
 
-<script src="/das/common/scripts/wfwiblib.js?p=2014.04.1.17" type="text/javascript"></script><script src="/das/common/scripts/jquery.js?p=2014.04.1.17" type="text/javascript"></script><script src="/das/common/scripts/util.js?p=2014.04.1.17" type="text/javascript"></script><style type="text/css">
+<script src="/das/common/scripts/wfwiblib.js?p=2015.01.0.16" type="text/javascript"></script><script src="/das/common/scripts/jquery.js?p=2015.01.0.16" type="text/javascript"></script><script src="/das/common/scripts/util.js?p=2015.01.0.16" type="text/javascript"></script><style type="text/css">
 						.auxAjaxAnchor {display: none;} 
-					</style><div class="OneLinkNoTx"><a href="https://online.wellsfargo.com/das/cgi-bin/session.cgi?sessargs=odcIDsfuoNbC0O6UeCl-ksyKFilc8iV-" class="auxAjaxAnchor exceptionNotifier" title="used by AJAX artifacts"></a></div><link rel="stylesheet" type="text/css" href="../common/styles/async-keepalive.css?p=2014.04.1.17"></link><script src="/das/common/scripts/async-keepalive.js?p=2014.04.1.17" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="/das/common/styles/publicsite.css?p=2014.04.1.17" media="screen,projection,print"></link><link rel="shortcut icon" type="image/x-icon" href="/das/common/images/favicon.ico?p=2014.04.1.17"></link><link rel="icon" type="image/x-icon" href="/das/common/images/favicon.ico?p=2014.04.1.17"></link>
+					</style><div class="OneLinkNoTx"><a href="https://online.wellsfargo.com/das/cgi-bin/session.cgi?sessargs=t9ziLZcTwPqTZHgirTJhPD8Fa87vT6QX" class="auxAjaxAnchor exceptionNotifier" title="used by AJAX artifacts"></a></div><link rel="stylesheet" type="text/css" href="../common/styles/async-keepalive.css?p=2015.01.0.16"></link><script src="/das/common/scripts/async-keepalive.js?p=2015.01.0.16" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="/das/common/styles/publicsite.css?p=2015.01.0.16" media="screen,projection,print"></link><link rel="shortcut icon" type="image/x-icon" href="/das/common/images/favicon.ico?p=2015.01.0.16"></link><link rel="icon" type="image/x-icon" href="/das/common/images/favicon.ico?p=2015.01.0.16"></link>
 
 </head>
     <body id="online_wellsfargo_com">
@@ -67,11 +67,22 @@
               	<a href="https://www.wellsfargo.com" tabindex="5"><img src="https://a248.e.akamai.net/f/248/3608/90m/online-static.wellsfargo.com/das/common/images/logo_62sq.gif" id="logo" alt="Wells Fargo Home Page" /></a><a href="https://www.wellsfargo.com/auxiliary_access/aa_talkatmloc" tabindex="5"><img src="https://a248.e.akamai.net/f/248/3608/90m/online-static.wellsfargo.com/das/common/images/shim.gif" class="inline" alt="Talking ATM Locations" border="0" height="1" width="1"/></a><a href="#skip" tabindex="5"><img src="https://a248.e.akamai.net/f/248/3608/90m/online-static.wellsfargo.com/das/common/images/shim.gif" class="inline" alt="Skip to page content" border="0" height="1" width="1" /></a>
 		</div>
     	<div id="topSearch">
-    	
-    	<form action="https://www.wellsfargo.com/search/search" method="get">
-    	<input name="query" value="" title="Search" size="25" type="text" tabindex="6"/>
-    	<input name="Search" value="Search" id="btnTopSearch"  tabindex="6" type="submit" />
-    	</form>
+		<script src="/das/common/scripts/GoogleGSA.js"></script>
+    		
+				
+			<form id="frmSearch" name="gs" method="GET" action="https://www.wellsfargo.com/search/search" role="search"
+				aria-label="Sitewide">
+				
+				
+				<label for="inputTopSearchField" class="searchhide">Search</label>
+				<div>
+				<span class="searchhide" id="srchInstructions">Use up and down arrows to navigate suggestions.</span>
+				<input name="q" size="25" tabindex="6" autocomplete="off" autocapitalize="off" id="inputTopSearchField" onkeyup="ss_handleKey(event)" type="text" aria-autocomplete="both" role="combobox" aria-controls="search_suggest" placeholder="Search" maxlength="75">
+				<input class="register" name="btnG" value="Search" id="btnTopSearch" tabindex="6" type="submit">
+				</div>
+				<table class="ss-gac-m" id="search_suggest" role="presentation"></table>
+			</form>
+		
     	
     	</div>
     	
@@ -254,7 +265,7 @@ function collectPcPrint() {
 					</div>
 					<div class="formCtlColumn">
 						<input type="text" name="userid" id="username" size="20" maxlength="14" accesskey="U" onclick="FocusNeeded=false;" onkeypress="FocusNeeded=false;" tabindex="1"/>
-123					</div>
+					</div>
 				</div>
 				<div class="formPseudoRow">
 					<div class="labelColumn">
@@ -266,7 +277,7 @@ function collectPcPrint() {
 						
 					</div>
 					<div class="formCtlColumn">
-						<input type="password" name="password" id="password" size="20" maxlength="14" tabindex="2"/>password<br/>
+						<input type="password" name="password" id="password" size="20" maxlength="14" tabindex="2"/><br/>
 						<a href="https://www.wellsfargo.com/help/faqs/signon_faqs" tabindex="4">Username/Password Help</a>
 						<br />
 						<br />
@@ -362,9 +373,9 @@ function collectPcPrint() {
  	
 
 
-
 	
 
+	
 	
 	
 		
@@ -372,13 +383,8 @@ function collectPcPrint() {
 			</script>
 		
 			
-				<script language="JavaScript">
-									var date = new Date();
-									var currentTime = date.getTime();
-									var offSet = date.getTimezoneOffset();
-									var Unique_ID = currentTime - offSet;
-									var roiID = '';
-									roiID = (roiID!=null)? roiID: Unique_ID;
+				<script language="JavaScript">									
+									var roiID = "Unique_ID=" + '';						
 									ROItag('7116-59391-3840-0', 'DMTDCCNFLLOGIN=1', roiID);
 
 				</script>

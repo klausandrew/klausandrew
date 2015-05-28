@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Ergolys\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ergolys\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Json">
       <HintPath>..\Ergolys\packages\JSON.1.0.1\lib\net40\Json.dll</HintPath>
     </Reference>
@@ -63,50 +71,55 @@
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\Ergolys\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Owin">
       <HintPath>..\Ergolys\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.IdentityModel.Tokens.Jwt">
       <HintPath>..\Ergolys\packages\System.IdentityModel.Tokens.Jwt.4.0.2.202250711\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
       <Private>True</Private>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
       <Private>True</Private>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor">
+      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
       <Private>True</Private>
-      <HintPath>..\Ergolys\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebActivator, Version=1.4.4.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="WebActivatorEx">
       <HintPath>..\Ergolys\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +127,105 @@
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="DataAccess.cs" />
     <Compile Include="IDataAccess.cs" />
+    <Compile Include="NorthwindEntityContext\Alphabetical_list_of_product.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Category.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Category_Sales_for_1997.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Contact.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Current_Product_List.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Customer.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\CustomerDemographic.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Customer_and_Suppliers_by_City.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Employee.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Invoice.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\NorthwindContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\NorthwindContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\NorthwindContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Order.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Orders_Qry.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Order_Detail.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Order_Details_Extended.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Order_Subtotal.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Product.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Products_Above_Average_Price.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Products_by_Category.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Product_Sales_for_1997.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Region.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Sales_by_Category.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Sales_Totals_by_Amount.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Shipper.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Summary_of_Sales_by_Quarter.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Summary_of_Sales_by_Year.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Supplier.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\sysdiagram.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindEntityContext\Territory.cs">
+      <DependentUpon>NorthwindContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -124,8 +236,25 @@
     <None Include="fonts\glyphicons-halflings-regular.ttf" />
     <None Include="fonts\glyphicons-halflings-regular.woff" />
     <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <EntityDeploy Include="NorthwindEntityContext\NorthwindContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NorthwindContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="NorthwindEntityContext\app.config" />
+    <None Include="NorthwindEntityContext\NorthwindContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NorthwindContext.edmx</DependentUpon>
+      <LastGenOutput>NorthwindContext.Context.cs</LastGenOutput>
+    </None>
+    <None Include="NorthwindEntityContext\NorthwindContext.edmx.diagram">
+      <DependentUpon>NorthwindContext.edmx</DependentUpon>
+    </None>
+    <None Include="NorthwindEntityContext\NorthwindContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NorthwindContext.edmx</DependentUpon>
+      <LastGenOutput>NorthwindContext.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
-    <None Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -136,12 +265,13 @@
     <Content Include="Icon.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\json-serialize.js" />
     <Content Include="Scripts\json-serialize.min.js" />
     <Content Include="Scripts\npm.js" />
+    <Content Include="WebActivator.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,9 +7,12 @@ using System.Data.Sql;
 using System.Data;
 using System.Data.SqlClient;
 using Ergolys.DataAccess;
+using Ergolys.NorthwindEntityContext;
 
 namespace Ergolys.DataAccess {
     public class DataAccess : IDataAccess {
+
+
 
         SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Klaus\Desktop\Andrew\github\Ergolys\ObjectModels\NORTHWND.MDF;Integrated Security=True");
 
