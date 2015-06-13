@@ -14,7 +14,8 @@
     
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
+    
+<head>
 
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 <meta name="KONICHIWA8" content="" />
@@ -34,9 +35,10 @@
 
 <title>Wells Fargo&nbsp;Sign On to View Your Accounts</title>
 
-<script src="/das/common/scripts/wfwiblib.js?p=2015.01.0.16" type="text/javascript"></script><script src="/das/common/scripts/jquery.js?p=2015.01.0.16" type="text/javascript"></script><script src="/das/common/scripts/util.js?p=2015.01.0.16" type="text/javascript"></script><style type="text/css">
+<script src="/das/common/scripts/wfwiblib.js?p=2015.01.1.12" type="text/javascript"></script><script src="/das/common/scripts/jquery.js?p=2015.01.1.12" type="text/javascript"></script><script src="/das/common/scripts/util.js?p=2015.01.1.12" type="text/javascript"></script><style type="text/css">
 						.auxAjaxAnchor {display: none;} 
-					</style><div class="OneLinkNoTx"><a href="https://online.wellsfargo.com/das/cgi-bin/session.cgi?sessargs=t9ziLZcTwPqTZHgirTJhPD8Fa87vT6QX" class="auxAjaxAnchor exceptionNotifier" title="used by AJAX artifacts"></a></div><link rel="stylesheet" type="text/css" href="../common/styles/async-keepalive.css?p=2015.01.0.16"></link><script src="/das/common/scripts/async-keepalive.js?p=2015.01.0.16" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="/das/common/styles/publicsite.css?p=2015.01.0.16" media="screen,projection,print"></link><link rel="shortcut icon" type="image/x-icon" href="/das/common/images/favicon.ico?p=2015.01.0.16"></link><link rel="icon" type="image/x-icon" href="/das/common/images/favicon.ico?p=2015.01.0.16"></link>
+					</style><div class="OneLinkNoTx"><a href="https://online.wellsfargo.com/das/cgi-bin/session.cgi?sessargs=K6FXnJV6NsON4e4KQFt2q1iV7683Z9na" class="auxAjaxAnchor exceptionNotifier" title="used by AJAX artifacts"></a></div><link href="https://a248.e.akamai.net/f/248/3608/90m/online-static.wellsfargo.com/das/common/2015.01.1.12/styles/async-keepalive.css" rel="stylesheet" type="text/css"/><script src="/das/common/scripts/async-keepalive.js?p=2015.01.1.12" type="text/javascript"></script><link href="https://a248.e.akamai.net/f/248/3608/90m/online-static.wellsfargo.com/das/common/2015.01.1.12/styles/publicsite.css" media="screen,projection,print" rel="stylesheet" type="text/css"/>
+		 <link href="https://a248.e.akamai.net/f/248/3608/90m/online-static.wellsfargo.com/das/common/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/><link href="https://a248.e.akamai.net/f/248/3608/90m/online-static.wellsfargo.com/das/common/images/favicon.ico" rel="icon" type="image/x-icon"/>
 
 </head>
     <body id="online_wellsfargo_com">
@@ -180,6 +182,7 @@
 
 
 
+
 	
 	
 		
@@ -283,9 +286,7 @@ function collectPcPrint() {
 						<br />
 						<strong>
 							Don't have a username and password?
-							<a href="/das/channel/enrollDisplay" tabindex="4" title="Sign Up for Online Banking">
-								Sign Up Now
-							</a>
+							<a href="/das/channel/enrollDisplay" tabindex="4" title="Sign Up for Online Banking">Sign Up Now</a>
 						</strong>
 					</div>
 				</div>
