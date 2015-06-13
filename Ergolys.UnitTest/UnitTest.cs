@@ -46,6 +46,7 @@ namespace Ergolys.UnitTest {
             adapter.Fill(ds);
             dt = ds.Tables[0];
         }
+
         [TestMethod]
         public void GetNWEntities() {
 
@@ -59,6 +60,7 @@ namespace Ergolys.UnitTest {
 
             //Assert.IsNotNull(records);
         }
+
         [TestMethod]
         public void ContextConnection() {
 
@@ -214,6 +216,7 @@ namespace Ergolys.UnitTest {
 
             Assert.IsNotNull(image);
         }
+        
         [TestMethod]
         public void AccessWebPage() {
             WebClient webClient = new WebClient();
@@ -247,6 +250,7 @@ namespace Ergolys.UnitTest {
             Console.ReadLine();
             Assert.Fail("All tests are designed to fail, at first...");
         }
+        
         [TestMethod]
         public void FizzBuzz() {
             StringBuilder print = new StringBuilder();
@@ -257,6 +261,7 @@ namespace Ergolys.UnitTest {
                 print.AppendLine(((i / 5 % 1) == 0) ? "Buzz" : "");
             }
         }
+        
         [TestMethod]
         public void Minify() {
 
@@ -267,6 +272,7 @@ namespace Ergolys.UnitTest {
 
             Assert.IsTrue(true);
         }
+        
         /// <summary>
         /// apx. ~15min. 
         /// </summary>
@@ -284,28 +290,34 @@ namespace Ergolys.UnitTest {
             //writer.WriteAsync(print.ToString);// (print);
             writer.Close();
         }
+
         [TestMethod]
         public void parseJson() {
             JsonParser json = new Json.JsonParser();
             json.ToString();
             //json(parseJson());
         }
+
         [TestMethod]
         public void DbContextCreate() {
             Assert.IsTrue(true);
         }
+        
         [TestMethod]
         public void DbContextRead() { 
             Assert.IsTrue(true);
         }
+        
         [TestMethod]
         public void DbContextUpdate() {
             Assert.IsTrue(true);
         }
+        
         [TestMethod]
         public void DbContextLogicalDelete() {
             Assert.IsTrue(true);
         }
+        
         [TestMethod]
         public void GetImageSet() {
             IEnumerable<ImageModel> ImageSet;
